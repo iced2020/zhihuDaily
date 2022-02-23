@@ -7,28 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79BEC57B4D48941229CF3B22 /* Pods_zhihuDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D163F7DABA8F5F3123B67C56 /* Pods_zhihuDaily.framework */; };
+		B0034957279FD2DF00F6386F /* TopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0034956279FD2DF00F6386F /* TopModel.m */; };
+		B0034E0427B26BF000F6386F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0034E0327B26BF000F6386F /* BaseViewController.m */; };
+		B0034E0727B3ACA600F6386F /* BaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0034E0627B3ACA600F6386F /* BaseScrollView.m */; };
+		B0034E0A27B6933B00F6386F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0034E0927B6933B00F6386F /* LoginViewController.m */; };
+		B0034E0D27B7A91300F6386F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0034E0C27B7A91300F6386F /* NewsViewController.m */; };
+		B0034E1327BBF2E500F6386F /* Model2.m in Sources */ = {isa = PBXBuildFile; fileRef = B0034E1227BBF2E500F6386F /* Model2.m */; };
+		B0034E1627BBF4AE00F6386F /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0034E1527BBF4AE00F6386F /* TimeModel.m */; };
+		B03265E8279BB2F100DE90DE /* HMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B03265E7279BB2F100DE90DE /* HMTableViewCell.m */; };
 		B04E61AF27993B5E000BC6BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E61AE27993B5E000BC6BA /* AppDelegate.m */; };
-		B04E61B227993B5E000BC6BA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E61B127993B5E000BC6BA /* SceneDelegate.m */; };
 		B04E61B527993B5E000BC6BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E61B427993B5E000BC6BA /* ViewController.m */; };
 		B04E61B827993B5E000BC6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04E61B627993B5E000BC6BA /* Main.storyboard */; };
 		B04E61BA27993B5E000BC6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04E61B927993B5E000BC6BA /* Assets.xcassets */; };
 		B04E61BD27993B5E000BC6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04E61BB27993B5E000BC6BA /* LaunchScreen.storyboard */; };
 		B04E61C027993B5E000BC6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E61BF27993B5E000BC6BA /* main.m */; };
+		B04E61D627993DA6000BC6BA /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E61D427993DA6000BC6BA /* Model.m */; };
+		B04E61DA27993DB2000BC6BA /* HMNetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E61D827993DB2000BC6BA /* HMNetworkTools.m */; };
+		B086793827C2010A008702FD /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086793727C2010A008702FD /* PersonViewController.m */; };
+		B086794127C344E0008702FD /* MBProgressHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B086794027C344E0008702FD /* MBProgressHUDTool.m */; };
+		B086794427C3AA1C008702FD /* YoolBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086794327C3AA1C008702FD /* YoolBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34CA1ECDA1CDBB9CD7E6C407 /* Pods-zhihuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihuDaily.debug.xcconfig"; path = "Target Support Files/Pods-zhihuDaily/Pods-zhihuDaily.debug.xcconfig"; sourceTree = "<group>"; };
+		7D7DA57E84982238AC3A316F /* Pods-zhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihuDaily.release.xcconfig"; path = "Target Support Files/Pods-zhihuDaily/Pods-zhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
+		B003494F279EFC5000F6386F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0034955279FD2DF00F6386F /* TopModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopModel.h; sourceTree = "<group>"; };
+		B0034956279FD2DF00F6386F /* TopModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopModel.m; sourceTree = "<group>"; };
+		B0034E0227B26BF000F6386F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B0034E0327B26BF000F6386F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		B0034E0527B3ACA600F6386F /* BaseScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseScrollView.h; sourceTree = "<group>"; };
+		B0034E0627B3ACA600F6386F /* BaseScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseScrollView.m; sourceTree = "<group>"; };
+		B0034E0827B6933B00F6386F /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B0034E0927B6933B00F6386F /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B0034E0B27B7A91300F6386F /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		B0034E0C27B7A91300F6386F /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		B0034E1127BBF2E500F6386F /* Model2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model2.h; sourceTree = "<group>"; };
+		B0034E1227BBF2E500F6386F /* Model2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model2.m; sourceTree = "<group>"; };
+		B0034E1427BBF4AE00F6386F /* TimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
+		B0034E1527BBF4AE00F6386F /* TimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
+		B03265E6279BB2F100DE90DE /* HMTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMTableViewCell.h; sourceTree = "<group>"; };
+		B03265E7279BB2F100DE90DE /* HMTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMTableViewCell.m; sourceTree = "<group>"; };
 		B04E61AA27993B5E000BC6BA /* zhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04E61AD27993B5E000BC6BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B04E61AE27993B5E000BC6BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B04E61B027993B5E000BC6BA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		B04E61B127993B5E000BC6BA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		B04E61B327993B5E000BC6BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B04E61B427993B5E000BC6BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B04E61B727993B5E000BC6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B04E61B927993B5E000BC6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04E61BC27993B5E000BC6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B04E61BE27993B5E000BC6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B04E61BF27993B5E000BC6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B04E61D427993DA6000BC6BA /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		B04E61D527993DA6000BC6BA /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		B04E61D827993DB2000BC6BA /* HMNetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNetworkTools.m; sourceTree = "<group>"; };
+		B04E61D927993DB2000BC6BA /* HMNetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNetworkTools.h; sourceTree = "<group>"; };
+		B086793627C2010A008702FD /* PersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		B086793727C2010A008702FD /* PersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		B086793F27C344E0008702FD /* MBProgressHUDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDTool.h; sourceTree = "<group>"; };
+		B086794027C344E0008702FD /* MBProgressHUDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDTool.m; sourceTree = "<group>"; };
+		B086794227C3AA1C008702FD /* ToolBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBarViewController.h; sourceTree = "<group>"; };
+		B086794327C3AA1C008702FD /* YoolBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoolBarViewController.m; sourceTree = "<group>"; };
+		D163F7DABA8F5F3123B67C56 /* Pods_zhihuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhihuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +76,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BEC57B4D48941229CF3B22 /* Pods_zhihuDaily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5856B2FD48B6BB4C1100DDA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D163F7DABA8F5F3123B67C56 /* Pods_zhihuDaily.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9120179878DE509B1E21EE48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34CA1ECDA1CDBB9CD7E6C407 /* Pods-zhihuDaily.debug.xcconfig */,
+				7D7DA57E84982238AC3A316F /* Pods-zhihuDaily.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0034DED27A692BF00F6386F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B04E61B327993B5E000BC6BA /* ViewController.h */,
+				B04E61B427993B5E000BC6BA /* ViewController.m */,
+				B0034E0227B26BF000F6386F /* BaseViewController.h */,
+				B0034E0327B26BF000F6386F /* BaseViewController.m */,
+				B0034E0827B6933B00F6386F /* LoginViewController.h */,
+				B0034E0927B6933B00F6386F /* LoginViewController.m */,
+				B0034E0B27B7A91300F6386F /* NewsViewController.h */,
+				B0034E0C27B7A91300F6386F /* NewsViewController.m */,
+				B086793627C2010A008702FD /* PersonViewController.h */,
+				B086793727C2010A008702FD /* PersonViewController.m */,
+				B086794227C3AA1C008702FD /* ToolBarViewController.h */,
+				B086794327C3AA1C008702FD /* YoolBarViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B03265E5279BB2A600DE90DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B03265E6279BB2F100DE90DE /* HMTableViewCell.h */,
+				B03265E7279BB2F100DE90DE /* HMTableViewCell.m */,
+				B0034E0527B3ACA600F6386F /* BaseScrollView.h */,
+				B0034E0627B3ACA600F6386F /* BaseScrollView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B04E61A127993B5E000BC6BA = {
 			isa = PBXGroup;
 			children = (
 				B04E61AC27993B5E000BC6BA /* zhihuDaily */,
 				B04E61AB27993B5E000BC6BA /* Products */,
+				9120179878DE509B1E21EE48 /* Pods */,
+				5856B2FD48B6BB4C1100DDA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +151,45 @@
 		B04E61AC27993B5E000BC6BA /* zhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				B0034DED27A692BF00F6386F /* ViewController */,
+				B03265E5279BB2A600DE90DE /* View */,
+				B04E61D727993DB2000BC6BA /* Tools */,
+				B04E61D327993DA6000BC6BA /* Model */,
 				B04E61AD27993B5E000BC6BA /* AppDelegate.h */,
 				B04E61AE27993B5E000BC6BA /* AppDelegate.m */,
-				B04E61B027993B5E000BC6BA /* SceneDelegate.h */,
-				B04E61B127993B5E000BC6BA /* SceneDelegate.m */,
-				B04E61B327993B5E000BC6BA /* ViewController.h */,
-				B04E61B427993B5E000BC6BA /* ViewController.m */,
 				B04E61B627993B5E000BC6BA /* Main.storyboard */,
 				B04E61B927993B5E000BC6BA /* Assets.xcassets */,
 				B04E61BB27993B5E000BC6BA /* LaunchScreen.storyboard */,
-				B04E61BE27993B5E000BC6BA /* Info.plist */,
+				B003494F279EFC5000F6386F /* Info.plist */,
 				B04E61BF27993B5E000BC6BA /* main.m */,
 			);
 			path = zhihuDaily;
+			sourceTree = "<group>";
+		};
+		B04E61D327993DA6000BC6BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B04E61D527993DA6000BC6BA /* Model.h */,
+				B04E61D427993DA6000BC6BA /* Model.m */,
+				B0034E1127BBF2E500F6386F /* Model2.h */,
+				B0034E1227BBF2E500F6386F /* Model2.m */,
+				B0034955279FD2DF00F6386F /* TopModel.h */,
+				B0034956279FD2DF00F6386F /* TopModel.m */,
+				B0034E1427BBF4AE00F6386F /* TimeModel.h */,
+				B0034E1527BBF4AE00F6386F /* TimeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B04E61D727993DB2000BC6BA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B04E61D927993DB2000BC6BA /* HMNetworkTools.h */,
+				B04E61D827993DB2000BC6BA /* HMNetworkTools.m */,
+				B086793F27C344E0008702FD /* MBProgressHUDTool.h */,
+				B086794027C344E0008702FD /* MBProgressHUDTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04E61C327993B5E000BC6BA /* Build configuration list for PBXNativeTarget "zhihuDaily" */;
 			buildPhases = (
+				3488A2175004AFF17A017E66 /* [CP] Check Pods Manifest.lock */,
 				B04E61A627993B5E000BC6BA /* Sources */,
 				B04E61A727993B5E000BC6BA /* Frameworks */,
 				B04E61A827993B5E000BC6BA /* Resources */,
+				2E5FE50B87BE4C0A5AC927A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,15 +259,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E5FE50B87BE4C0A5AC927A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihuDaily/Pods-zhihuDaily-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhihuDaily/Pods-zhihuDaily-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zhihuDaily/Pods-zhihuDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3488A2175004AFF17A017E66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zhihuDaily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B04E61A627993B5E000BC6BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B04E61B527993B5E000BC6BA /* ViewController.m in Sources */,
+				B086794127C344E0008702FD /* MBProgressHUDTool.m in Sources */,
+				B0034E0427B26BF000F6386F /* BaseViewController.m in Sources */,
+				B0034E1327BBF2E500F6386F /* Model2.m in Sources */,
+				B04E61DA27993DB2000BC6BA /* HMNetworkTools.m in Sources */,
 				B04E61AF27993B5E000BC6BA /* AppDelegate.m in Sources */,
+				B0034E1627BBF4AE00F6386F /* TimeModel.m in Sources */,
+				B0034957279FD2DF00F6386F /* TopModel.m in Sources */,
+				B0034E0727B3ACA600F6386F /* BaseScrollView.m in Sources */,
+				B0034E0A27B6933B00F6386F /* LoginViewController.m in Sources */,
+				B086793827C2010A008702FD /* PersonViewController.m in Sources */,
+				B03265E8279BB2F100DE90DE /* HMTableViewCell.m in Sources */,
 				B04E61C027993B5E000BC6BA /* main.m in Sources */,
-				B04E61B227993B5E000BC6BA /* SceneDelegate.m in Sources */,
+				B04E61D627993DA6000BC6BA /* Model.m in Sources */,
+				B0034E0D27B7A91300F6386F /* NewsViewController.m in Sources */,
+				B086794427C3AA1C008702FD /* YoolBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +461,7 @@
 		};
 		B04E61C427993B5E000BC6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34CA1ECDA1CDBB9CD7E6C407 /* Pods-zhihuDaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +489,7 @@
 		};
 		B04E61C527993B5E000BC6BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7DA57E84982238AC3A316F /* Pods-zhihuDaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
