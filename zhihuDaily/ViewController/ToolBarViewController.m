@@ -13,7 +13,7 @@
 
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
-#define toolbarHeight   44
+#define toolbarHeight   46
 
 @interface ToolBarViewController ()
 @property (nonatomic, strong) UIToolbar *mToolbar;
@@ -32,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //初始化toolbar,注意这里CGRectMake前两个参数是toolbar的坐标，也就是其左上角的坐标点，x比较好理解，y需要通过计算得到
-    self.mToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT - toolbarHeight - 10, SCREEN_WIDTH, toolbarHeight)];
+    self.mToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, toolbarHeight)];
 
 
     //初始化itemFirst,itemSecond,itemThird并修改一下图片的渲染模式（不然图片是蓝色的）

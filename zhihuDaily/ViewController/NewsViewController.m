@@ -14,7 +14,7 @@
 
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
-#define toolbarHeight   44
+#define toolbarHeight   46
 
 @interface NewsViewController ()<WKUIDelegate, WKNavigationDelegate,UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, strong) WKWebView *webView;
@@ -54,6 +54,7 @@
     //添加下方的bar
     ToolBarViewController *secondVc = [[ToolBarViewController alloc] init];
     secondVc.Id = self.Id;
+    secondVc.view.frame = CGRectMake(0, SCREEN_HEIGHT - toolbarHeight, SCREEN_WIDTH, toolbarHeight);
     [self addChildViewController:secondVc];
     [self.view addSubview:secondVc.view];
     

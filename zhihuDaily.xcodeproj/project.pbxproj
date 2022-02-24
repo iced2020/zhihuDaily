@@ -26,7 +26,7 @@
 		B04E61DA27993DB2000BC6BA /* HMNetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B04E61D827993DB2000BC6BA /* HMNetworkTools.m */; };
 		B086793827C2010A008702FD /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086793727C2010A008702FD /* PersonViewController.m */; };
 		B086794127C344E0008702FD /* MBProgressHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B086794027C344E0008702FD /* MBProgressHUDTool.m */; };
-		B086794427C3AA1C008702FD /* YoolBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086794327C3AA1C008702FD /* YoolBarViewController.m */; };
+		B086794427C3AA1C008702FD /* ToolBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086794327C3AA1C008702FD /* ToolBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +67,7 @@
 		B086793F27C344E0008702FD /* MBProgressHUDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDTool.h; sourceTree = "<group>"; };
 		B086794027C344E0008702FD /* MBProgressHUDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDTool.m; sourceTree = "<group>"; };
 		B086794227C3AA1C008702FD /* ToolBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBarViewController.h; sourceTree = "<group>"; };
-		B086794327C3AA1C008702FD /* YoolBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoolBarViewController.m; sourceTree = "<group>"; };
+		B086794327C3AA1C008702FD /* ToolBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBarViewController.m; sourceTree = "<group>"; };
 		D163F7DABA8F5F3123B67C56 /* Pods_zhihuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhihuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,7 @@
 				B086793627C2010A008702FD /* PersonViewController.h */,
 				B086793727C2010A008702FD /* PersonViewController.m */,
 				B086794227C3AA1C008702FD /* ToolBarViewController.h */,
-				B086794327C3AA1C008702FD /* YoolBarViewController.m */,
+				B086794327C3AA1C008702FD /* ToolBarViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 				B04E61C027993B5E000BC6BA /* main.m in Sources */,
 				B04E61D627993DA6000BC6BA /* Model.m in Sources */,
 				B0034E0D27B7A91300F6386F /* NewsViewController.m in Sources */,
-				B086794427C3AA1C008702FD /* YoolBarViewController.m in Sources */,
+				B086794427C3AA1C008702FD /* ToolBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
