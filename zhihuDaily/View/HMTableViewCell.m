@@ -9,6 +9,8 @@
 #import <Masonry.h>
 #import <SDWebImage.h>
 
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
 @implementation HMTableViewCell
 
 - (void)awakeFromNib {
@@ -49,16 +51,19 @@
 - (void)layoutSubviews {
     //调用父类的方法
     [super layoutSubviews];
-    self.imgView.frame = CGRectMake(285, 20, 80, 80);
-//    [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(self.window);
-//    }];
+    [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(90);
+        make.height.mas_equalTo(90);
+        make.centerY.mas_equalTo(0);
+        make.right.mas_equalTo(-SCREEN_WIDTH/20);
+    }];
     [_tLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.imgView);
         make.right.equalTo(self.imgView.mas_left).offset(-10);
-        make.left.equalTo(self.imgView.mas_left).offset(-270);
+        make.left.equalTo(self.imgView.mas_left).offset(-SCREEN_WIDTH/1.5);
     }];
     [_atLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.imgView);
         make.left.equalTo(self.tLable);
         make.top.equalTo(self.tLable.mas_bottom).offset(10);
     }];
