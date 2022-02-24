@@ -7,7 +7,10 @@
 
 #import "PersonViewController.h"
 #import "BaseViewController.h"
+#import <Masonry.h>//布局约束
 
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
 @interface PersonViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong)UIButton *exitButton;
@@ -18,13 +21,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.imageView];
+    [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view).offset(-SCREEN_WIDTH/2);
+        make.width.mas_equalTo(200);
+        make.height.mas_equalTo(200);
+    }];
     [self.view addSubview:self.exitButton];
+    [self.exitButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view).offset(SCREEN_WIDTH/5);
+        make.width.mas_equalTo(315);
+        make.height.mas_equalTo(52);
+    }];
 }
 
 #pragma mark - lan加载
 - (UIImageView *)imageView{
     if (!_imageView) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+        _imageView = [[UIImageView alloc] init];
         _imageView.backgroundColor = [UIColor greenColor];
         _imageView.image = [UIImage imageNamed:@"login.jpg"];;
     }
