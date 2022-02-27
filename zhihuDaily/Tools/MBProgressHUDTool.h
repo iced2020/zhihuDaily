@@ -4,7 +4,7 @@
 //
 //  Created by 潘申冰 on 2022/2/21.
 //
-
+//  封装MBProgressHUD
 #import <MBProgressHUD/MBProgressHUD.h>
 
 NS_ASSUME_NONNULL_BEGIN

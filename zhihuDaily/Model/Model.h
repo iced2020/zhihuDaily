@@ -4,7 +4,7 @@
 //
 //  Created by 潘申冰 on 2022/1/19.
 //
-
+//  当日新闻数据模型
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 

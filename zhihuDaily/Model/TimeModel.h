@@ -4,7 +4,7 @@
 //
 //  Created by 潘申冰 on 2022/2/15.
 //
-
+//  获取网络当前时间模型
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 

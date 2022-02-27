@@ -4,7 +4,7 @@
 //
 //  Created by 潘申冰 on 2022/1/22.
 //
-
+//  自定义TableViewCell样式
 #import <UIKit/UIKit.h>
 #import "Model.h"
 
