@@ -14,7 +14,6 @@
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
 #define toolbarHeight   46
-
 @interface ToolBarViewController ()
 @property (nonatomic, strong) UIToolbar *mToolbar;
 @property (nonatomic, strong) UIBarButtonItem *itemFirst;
@@ -28,20 +27,16 @@
 
 @implementation ToolBarViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     //初始化toolbar,注意这里CGRectMake前两个参数是toolbar的坐标，也就是其左上角的坐标点，x比较好理解，y需要通过计算得到
     self.mToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, toolbarHeight)];
-
-
     //初始化itemFirst,itemSecond,itemThird并修改一下图片的渲染模式（不然图片是蓝色的）
     //ps：图标图片应该采用矢量图吧 目前是直接挖的图片与bar还有色差
     self.itemFirst = [[UIBarButtonItem alloc] initWithImage:[self reSizeImage:[UIImage imageNamed:@"back.jpg"] toSize:CGSizeMake(40, 40)] style:UIBarButtonItemStyleDone target:self action:@selector(exit)];
     self.itemSecond = [[UIBarButtonItem alloc] initWithImage:[self reSizeImage:[UIImage imageNamed:@"like.jpg"] toSize:CGSizeMake(40, 40)] style:UIBarButtonItemStyleDone target:self action:@selector(like)];
     self.itemThird = [[UIBarButtonItem alloc] initWithImage:[self reSizeImage:[UIImage imageNamed:@"star.jpg"] toSize:CGSizeMake(40, 40)] style:UIBarButtonItemStyleDone target:self action:@selector(star)];
     [self getdata];
-//    self.lab = [[UILabel alloc] init];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSLog(@"%@", self.popularity);
         self.itemFourth = [[UIBarButtonItem alloc] init];
@@ -51,9 +46,7 @@
         UIBarButtonItem *flexibaleSpaceItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
         //将itemFirst、itemSecond等UIBarButtonItem添加到UIToolbar，并使用FlexibleSpace优化布局
         //总结一下Flexible Space:它能够让item之间的控件弹性变化，保证item之间的间距都是一样的
-        self.mToolbar.items = @[flexibaleSpaceItem, self.itemFirst, flexibaleSpaceItem,
-                                    self.itemSecond, flexibaleSpaceItem, self.itemFourth, flexibaleSpaceItem,
-                                     self.itemThird, flexibaleSpaceItem];
+        self.mToolbar.items = @[flexibaleSpaceItem, self.itemFirst, flexibaleSpaceItem,self.itemSecond, flexibaleSpaceItem, self.itemFourth, flexibaleSpaceItem,self.itemThird, flexibaleSpaceItem];
         [self.view addSubview:self.mToolbar];
         });
 }
@@ -71,9 +64,13 @@
         }
      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //获取返回的数组
-        NSString *like = responseObject[@"popularity"];
+        //实际上返回的的数据类型是NSNumber
+        NSNumber *like = responseObject[@"popularity"];
+        if (like == nil) {
+            self.popularity = 0;
+        }else{
         self.popularity = like;
-//        [like intValue];
+        }
         }
      failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Error");

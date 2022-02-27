@@ -156,10 +156,9 @@
 
 #pragma mark -SDCycleScrollViewDelegate
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
-    ToolBarViewController *extraModel = [[ToolBarViewController alloc] init];
     NewsViewController *newsView = [[NewsViewController alloc]init];
     [TopModel getDataSuccess:^(NSArray<TopModel *> * tarray) {
-        extraModel.Id = tarray[index].Id;
+        newsView.Id = tarray[index].Id;
         newsView.url = tarray[index].url;
         [self.navigationController pushViewController:newsView animated:YES];
     }];
