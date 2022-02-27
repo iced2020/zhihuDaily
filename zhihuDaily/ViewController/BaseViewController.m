@@ -25,7 +25,7 @@
 //宏定义 屏幕大小
 #define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
-
+//遵循协议
 @interface BaseViewController ()<UITableViewDelegate, UITableViewDataSource,SDCycleScrollViewDelegate,UIScrollViewDelegate>
 //新闻列表
 @property (nonatomic, strong) UITableView *tableView;

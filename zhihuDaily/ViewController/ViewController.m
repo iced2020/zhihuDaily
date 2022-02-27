@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 
-//遵循协议
+
 @interface ViewController ()
 
 @end
