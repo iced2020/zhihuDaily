@@ -28,7 +28,7 @@
     [self.view addSubview:self.loginLabel];
     [self.loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view).offset(-120);
-        make.centerY.equalTo(self.view).offset(-240);
+        make.top.equalTo(self.view).offset(120);
     }];
     [self.view addSubview:self.welcomeLabel];
     [self.welcomeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
