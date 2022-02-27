@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginViewController : UIViewController
 
-@property (nonatomic, assign) BOOL Logined;
+@property (nonatomic, assign) BOOL Logined;//预留登录状态参数
 
 @end
 

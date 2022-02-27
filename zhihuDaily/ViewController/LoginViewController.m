@@ -7,7 +7,10 @@
 
 #import "LoginViewController.h"
 #import "BaseViewController.h"
+#import <Masonry.h>//布局约束
 
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
 @interface LoginViewController ()
 @property (nonatomic, strong)UILabel *loginLabel;
 @property (nonatomic, strong)UILabel *welcomeLabel;
@@ -23,11 +26,37 @@
     // Do any additional setup after loading the view.
     [self loadUserInfo];
     [self.view addSubview:self.loginLabel];
+    [self.loginLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view).offset(-120);
+        make.centerY.equalTo(self.view).offset(-240);
+    }];
     [self.view addSubview:self.welcomeLabel];
+    [self.welcomeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.loginLabel);
+        make.top.equalTo(self.loginLabel.mas_bottom).offset(20);
+    }];
     [self.view addSubview:self.nameTextField];
+    [self.nameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.welcomeLabel.mas_bottom).offset(20);
+        make.width.mas_equalTo(SCREEN_WIDTH/1.5);
+        make.height.mas_equalTo(40);
+    }];
     [self.view addSubview:self.pwdTextField];
+    [self.pwdTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.nameTextField.mas_bottom).offset(20);
+        make.width.mas_equalTo(self.nameTextField);
+        make.height.mas_equalTo(self.nameTextField);
+    }];
     [self.view addSubview:self.loginButton];
-    self.Logined = NO;
+    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.pwdTextField.mas_bottom).offset(20);
+        make.width.mas_equalTo(SCREEN_WIDTH/1.2);
+        make.height.mas_equalTo(52);
+    }];
+    self.Logined = NO;//预留登录状态参数
 }
 
 
@@ -36,7 +65,6 @@
     if(_loginLabel == nil){
         _loginLabel = [[UILabel alloc]init];
         _loginLabel.text =@"登录";
-        _loginLabel.frame =CGRectMake(15, 110, 88, 68);
         _loginLabel.font = [UIFont boldSystemFontOfSize:40];
         _loginLabel.textColor = [UIColor blueColor];
     }
@@ -47,7 +75,6 @@
     if(_welcomeLabel == nil){
         _welcomeLabel = [[UILabel alloc]init];
         _welcomeLabel.text =@"您好，欢迎来到知乎日报！";
-        _welcomeLabel.frame =CGRectMake(15, 175, 216, 28);
         _welcomeLabel.font = [UIFont boldSystemFontOfSize:16];
         _welcomeLabel.textColor = [UIColor grayColor];
         _welcomeLabel.numberOfLines = 0;
@@ -57,7 +84,7 @@
 
 - (UITextField *)nameTextField{
     if (_nameTextField == nil) {
-        _nameTextField = [[UITextField alloc]initWithFrame:CGRectMake(60, 210, 270, 40)];
+        _nameTextField = [[UITextField alloc]init];
         _nameTextField.placeholder = @"请输入账号（默认admin）";
         _nameTextField.font = [UIFont systemFontOfSize:20];
         _nameTextField.borderStyle = UITextBorderStyleRoundedRect;//边框样式
@@ -67,7 +94,7 @@
 
 - (UITextField *)pwdTextField{
     if (_pwdTextField == nil) {
-        _pwdTextField = [[UITextField alloc]initWithFrame:CGRectMake(60, 270, 270, 40)];
+        _pwdTextField = [[UITextField alloc]init];
         _pwdTextField.placeholder = @"请输入密码（默认admin）";
         _pwdTextField.secureTextEntry = YES;
         _pwdTextField.font = [UIFont systemFontOfSize:20];
@@ -80,7 +107,6 @@
 - (UIButton *)loginButton{
     if (_loginButton == nil) {
         _loginButton = [[UIButton alloc]init];
-        _loginButton.frame =CGRectMake(30, 360, 315, 52);
         //给控件加圆角
         _loginButton.layer.cornerRadius = 25;
         [_loginButton addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
