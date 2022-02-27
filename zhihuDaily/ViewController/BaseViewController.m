@@ -162,8 +162,6 @@
         newsView.url = tarray[index].url;
         [self.navigationController pushViewController:newsView animated:YES];
     }];
-    // 清理缓存
-    [SDCycleScrollView clearImagesCache];
 }
 
 

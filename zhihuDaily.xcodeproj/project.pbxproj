@@ -109,10 +109,10 @@
 				B0034E0327B26BF000F6386F /* BaseViewController.m */,
 				B0034E0827B6933B00F6386F /* LoginViewController.h */,
 				B0034E0927B6933B00F6386F /* LoginViewController.m */,
-				B0034E0B27B7A91300F6386F /* NewsViewController.h */,
-				B0034E0C27B7A91300F6386F /* NewsViewController.m */,
 				B086793627C2010A008702FD /* PersonViewController.h */,
 				B086793727C2010A008702FD /* PersonViewController.m */,
+				B0034E0B27B7A91300F6386F /* NewsViewController.h */,
+				B0034E0C27B7A91300F6386F /* NewsViewController.m */,
 				B086794227C3AA1C008702FD /* ToolBarViewController.h */,
 				B086794327C3AA1C008702FD /* ToolBarViewController.m */,
 			);
